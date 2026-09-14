@@ -223,6 +223,11 @@ img { max-width: 100%; height: auto; }
     line-height: .93;
     letter-spacing: -.05em;
     font-weight: 500;
+    animation: hero-rise .8s cubic-bezier(.22, .61, .36, 1) both;
+}
+@keyframes hero-rise {
+    from { transform: translateY(1.6rem); }
+    to { transform: none; }
 }
 .hero-title .serif { font-weight: 500; }
 
@@ -775,7 +780,7 @@ a.btn--ghost:hover { color: var(--accent-2); border-color: var(--accent); box-sh
 
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    .marquee-track, .footer-marquee-track { animation: none; }
+    .marquee-track, .footer-marquee-track, .hero-title { animation: none; }
     .reveal { opacity: 1; transform: none; transition: none; }
     .work-card:hover, .card--plain:hover, a.btn:hover { transform: none; }
     .reveal { transition: opacity .01s ease; }
