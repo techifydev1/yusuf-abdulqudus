@@ -224,6 +224,7 @@ img { max-width: 100%; height: auto; }
     letter-spacing: -.05em;
     font-weight: 500;
     animation: hero-rise .8s cubic-bezier(.22, .61, .36, 1) both;
+    will-change: transform;
 }
 @keyframes hero-rise {
     from { transform: translateY(1.6rem); }
@@ -279,6 +280,7 @@ img { max-width: 100%; height: auto; }
     width: max-content;
     white-space: nowrap;
     animation: marquee 40s linear infinite;
+    will-change: transform;
 }
 .marquee:hover .marquee-track { animation-play-state: paused; }
 .marquee-track span {
@@ -652,6 +654,7 @@ a.btn--ghost:hover { color: var(--accent-2); border-color: var(--accent); box-sh
     width: max-content;
     white-space: nowrap;
     animation: marquee 46s linear infinite;
+    will-change: transform;
 }
 .footer-marquee-track span {
     font-family: var(--font-display);
